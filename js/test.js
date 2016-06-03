@@ -7,7 +7,7 @@ dev.addEventListener('mouseout', function () {
 });
 $(document).ready(function () {
     $(".btnSlide").click(function () {
-        $(".row2").slideToggle(500);
+        $(".row2").slideToggle(300);
     });
 });
 
