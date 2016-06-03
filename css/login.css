@@ -1,0 +1,164 @@
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:200,400,600);
+#formContainer {
+    position: fixed;
+    margin-top: 15%;
+    margin-left: 35%;
+    background-color: rgba(255, 255, 255, 0.1);
+    max-width: 30vmax;
+}
+
+body {
+    background-image: url("../images/backdrop.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Titillium Web';
+}
+
+h1 {
+    margin-bottom: 40px;
+    font-family: Comfortaa;
+    font-weight: 700;
+    margin-left: -187px;
+    color: white;
+    font-size: 30px;
+    text-shadow: 5px 5px 10px #696969;
+    text-align: center;
+}
+
+.inner-addon {
+    position: relative;
+}
+
+.inner-addon .glyphicon {
+    position: absolute;
+    padding: 10px;
+}
+
+.left-addon input {
+    padding-left: 30px;
+}
+
+.right-addon input {
+    padding-right: 30px;
+}
+
+#check {
+    margin-left: 38%;
+    color: white;
+}
+
+#submit:hover {
+    align-content: flex-start;
+}
+
+#signup {
+    text-align: center;
+    font-size: 15px;
+}
+
+#sig {
+    margin-left: 90px;
+    color: #fff;
+    opacity: 1;
+}
+
+#signuplink {
+    color: #fff;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+#email {
+    color: white;
+    font-weight: 300;
+}
+
+#pwd {
+    color: white;
+    font-weight: 300;
+}
+
+#sign {
+    margin-left: 90px;
+    color: #fff;
+    opacity: 1;
+    margin-top: -22px
+}
+
+.btn-group {
+    margin-bottom: 10px;
+}
+
+#pass {
+    color: black;
+}
+
+#emailIn {
+    color: black;
+}
+
+#navbar {
+    background: black;
+    color: white;
+}
+
+li:hover {
+    background: #4caf50;
+    text-align: center;
+}
+
+.navbar-inverse {
+    background: black;
+    color: white;
+}
+.navbar-custom{
+    color: #FFFFFF;
+    background-color: #CC3333;
+}
+
+input[type=email] {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    border: 3px solid #ccc;
+}
+
+input[type=email]:focus {
+    border: 3px solid #555;
+}
+
+input[type=password] {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    border: 3px solid #ccc;
+}
+
+input[type=password]:focus {
+    border: 3px solid #555;
+}
+
+#subBut {
+    background: #4caf50;
+    color: white;
+}
+
+#subBut:hover {
+    box-shadow: 2px 2px 2px #4caf50;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+}
+
+input[type=text] {
+    margin-top: 12px;
+    border: 2px solid #555;
+    border-radius: 100px;
+    height: 30px;
+    padding-left: 20px;
+    width: 60%;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 100%;
+}
