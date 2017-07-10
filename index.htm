@@ -2,168 +2,468 @@
 <html lang="en">
 
 <head>
-    <title>Portfolio</title>
+
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/home.css">
-    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Indie+Flower|Covered+By+Your+Grace' rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Praneet">
+
+    <title>Profile</title>
+
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/freelancer.min.css" rel="stylesheet">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+
 </head>
 
-<body style="text-align:center">
-    <nav class="navbar navbar-custom navbar-fixed-top" id="navColor">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                    <span class="icon-bar" style="border: 1px solid white"></span>
-                    <span class="icon-bar" style="border: 1px solid white"></span>
-                    <span class="icon-bar" style="border: 1px solid white"></span>
+<body id="page-top" class="index">
+<div id="skipnav"><a href="#maincontent">Skip to main content</a></div>
+
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="index.htm" id="brand">My Web</a>
+                <a class="navbar-brand" href="#page-top">Praneet Mehta</a>
             </div>
-            <div class="collapse navbar-collapse" id="navbar">
-                <ul class="nav navbar-nav ">
-                    <li><a href="index.htm">Home</a></li>
-                    <li><a href="#AboutUs">About</a></li>
-                    <li><a href="#services">Project Gallery</a></li>
-                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Contact Us<span class="caret"></span></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="#">contact 1</a></li>
-                            <li><a href="#">contact 2</a></li>
-                        </ul>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
                     </li>
-                    <li><a href="#" id="developer">Developer</a></li>
+                    <li class="page-scroll">
+                        <a href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#about">About</a>
+                    </li>
+
                 </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container" id="maincontent" tabindex="-1">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img class="img-responsive img-circle profile_img" src="img/profile.JPG" alt="">
+                    <div class="intro-text">
+                        <h1 class="name">JS and Python Lover</h1>
+                        <hr class="star-light">
+                        <span class="skills">Web Developer and The ML Guy</span>
+                        <style>
+                        .profile_img{
+                            height:250px;
+                            width:250px;
+                            padding:20px;
+                            border:2px solid white;
+                            transition: all 0.5s;
+                        }
+                        .profile_img:hover{
+                            width: 270px;
+                            height: 270px;
+                            padding: 0;
+                            border: 6px solid white;
+                        }
+                        </style>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Portfolio</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 portfolio-item">
+                    <h4>Online K-shop</h4>
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/cabin.png" class="img-responsive" alt="Cabin">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <h4>Mess Grace System</h4>
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/cake.png" class="img-responsive" alt="Slice of cake">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <h4>Micro Blogging Platform</h4>
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/circus.png" class="img-responsive" alt="Circus tent">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <h4>Cab sharing Portal</h4>
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/game.png" class="img-responsive" alt="Game controller">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <h4>News Seggregator</h4>
+                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/safe.png" class="img-responsive" alt="Safe">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <h4>Review Sentiment Analysis</h4>
+                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/submarine.png" class="img-responsive" alt="Submarine">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <h4 style="text-align:center">and much more at <a href="https://github.com/praneetmehta" target="_blank">Github </a>...</h4>
+    </section>
+
+    <!-- About Section -->
+    <section class="success" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>About</h2>
+                    <hr class="star-light">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-lg-offset-2">
+                    <p>I am a freelancer who likes to solve day to day hiccups using code. I like JS and Python(as I already mentioned in bolds) and have a grudge against PHP. I started as a frontend developer and as of today i have mastered ("maybe") HTML, CSS, JS(Node.js, jquery, MongoDB, Express.js), Python and more</p>
+                </div>
+                <div class="col-lg-4">
+                    <h4 style="text-align:center">Skills</h4>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped active progress-bar-warning" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:85%">
+                            HTML
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped active progress-bar-danger" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                            CSS
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped active progress-bar-info" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:65%">
+                            JS
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped active progress-bar-success" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                            NodeJS
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped active progress-bar-warning" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:65%">
+                            Python
+                        </div>
+                    </div>
+                </div>
 
             </div>
         </div>
-    </nav>
-    <div class="container-fluid" id="header">
-        <div class="col-md-12">
-            "My Portfolio"
-        </div>
-    </div>
-    <div>
-        <button type="button" id="colorScheme"><img src="images/settings.gif" class="img-rounded" id="gear" width="25px" height="25px;"></button>
-        <button type="button" class="btn" id="clr1" onclick="changeColor('#333')"></button>
-        <button type="button" class="btn" id="clr2" onclick="changeColor('#0095ff')"></button>
-        <button type="button" class="btn" id="clr3" onclick="changeColor('#f69c55')"></button>
-        <button type="button" class="btn" id="clr4" onclick="changeColor('#cc0000')"></button>
-        <button type="button" class="btn" id="grad1" onclick="changeGradient('#6c5b7b')"></button>
-        <button type="button" class="btn" id="grad2" onclick="changeGradient('#99b898')"></button>
-        <button type="button" class="btn" id="grad3" onclick="changeGradient('#3eaca8')"></button>
-        <button type="button" class="btn" id="grad4" onclick="changeGradient('#F9d423')"></button>
-    </div>
-    <div class="container-fluid" id="textBody">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div id="profile-pic">
-                        <img src="images/proPic.jpg" width="200" height="250" style="margin-top:15px" id="pro">
+    </section>
+
+    <!-- Contact Section -->
+
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-4">
+
                     </div>
-                    <h1 id="textHead" style="font-family:'Bangers'">Creative Web Developer and Designer</h1>
-                    <h1 style="font-family:'Bangers'; font-weight:100; font-size:50px">"Praneet Mehta"</h1>
-                    <a href="#AboutUs"><img id="scrolldown" style="margin-top:300px" src="images/scroll-down2.gif"></a>
+                    <div class="footer-col col-md-4">
+                        <h3>Connect With Me</h3>
+                        <ul class="list-inline">
+                            <li>
+                                <a href="https://www.facebook.com/praneet.mehta.1" class="btn-social btn-outline"><span class="sr-only">Facebook</span><i class="fa fa-fw fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://plus.google.com/103128243539298162417" class="btn-social btn-outline"><span class="sr-only">Google Plus</span><i class="fa fa-fw fa-google-plus"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/praneetmehta" class="btn-social btn-outline"><span class="sr-only">Github</span><i class="fa fa-fw fa-github"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/praneet-mehta-588453114/" class="btn-social btn-outline"><span class="sr-only">Linked In</span><i class="fa fa-fw fa-linkedin"></i></a>
+                            </li>
+
+                        </ul>
+                    </div>
+
                 </div>
             </div>
         </div>
-    </div>
-    <div id="abt">
-        <h1 style="text-align:center" id="AboutUs">About Me</h1>
-        <hr class="small" style="border:1px solid #333">
-        <div class="container-fluid about" id="about">
-            <div class="col-md-12">
-                <h2 style="font-family:'Raleway'">Full Stack Developer with profound knowledge of </h2>
-                <br>
-                <br>
-                <br>
-                <div class="container-fluid">
-                    <div class="row techy" style="width:80%; margin-left:10%">
-                        <div class="col-lg-2 col-md-2 col-sm-2 tech"><img src="images/html5.png" width="150" height="150"></div>
-                        <div class="col-lg-2 col-md-2 col-sm-2 tech"><img src="images/css3.png" width="150" height="150"></div>
-                        <div class="col-lg-2 col-md-2 col-sm-2 tech"><img src="images/b3.png" width="150" height="150"></div>
-                        <div class="col-lg-2 col-md-2 col-sm-2 tech"><img src="images/js.png" width="150" height="150"></div>
-                        <div class="col-lg-2 col-md-2 col-sm-2 tech"><img src="images/nodejs.png" width="150" height="150"></div>
-                        <div class="col-lg-2 col-md-2 col-sm-2 tech"><img src="images/mongo.png" width="150" height="150"></div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Copyright &copy; No Copyright Since 1997
                     </div>
                 </div>
             </div>
         </div>
+    </footer>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
     </div>
-    <div class="container-fluid" id="img-gallery">
-        <h1 id="services">Project Gallery</h1>
-        <hr class="small">
-        <div class="row">
-            <div class="col-lg-offset-2  col-lg-2 img desc">
-                <a href="http://praneetmehta.github.io/calculator" target="_blank"><img src="images/calc.png" width="200" height="150" class="img-rounded"></a>
-                <h5>JS Calculator</h5>
+
+    <!-- Portfolio Modals -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
             </div>
-            <div class="col-lg-2 img desc">
-                <a href="http://praneetmehta.github.io/Shopping-Website" target="_blank"><img src="images/Shop.png" width="200" height="150" class="img-rounded"></a>
-                <h5>Parallax scrolling Shopping Website</h5>
-            </div>
-            <div class="col-lg-2 img desc">
-                <a href="http://praneetmehta.github.io/3D_CSS" target="_blank"><img src="images/cube.png" width="200" height="150" class="img-rounded"></a>
-                <h5>3D Cube</h5>
-            </div>
-            <div class="col-lg-2 img desc">
-                <a href="http://praneetmehta.github.io/QuickLinks" target="_blank"><img src="images/QL.png" width="200" height="150" class="img-rounded"></a>
-                <h5>QuickLinks</h5>
-            </div>
-        </div>
-        <div class="row row2">
-            <hr>
-            <div class="col-lg-offset-2  col-lg-2 img desc">
-                <a href="https://github.com/praneetmehta/cab-sharing-portal"><img src="images/share.png" width="200" height="150"></a>
-                <h5>Cab Sharing Portal build upon Node.js</h5>
-            </div>
-            <div class="col-lg-2 img desc">
-                <a href="https://github.com/praneetmehta/PersistentLogin"><img src="images/login.png" width="200" height="150"></a>
-                <h5>Session based persistent Login(Node js)</h5>
-            </div>
-            <div class="col-lg-2 img desc">
-                <a href="https://github.com/praneetmehta/microB"><img src="images/icon.png" width="200" height="150"></a>
-                <h5>A simple MicroBlogging Platform (Under dev.)</h5>
-            </div>
-            <div class="col-lg-2 img desc">
-                <a href="#"><img src="images/icon.png" width="200" height="150"></a>
-                <h5>Under Progress!!</h5>
-            </div>
-        </div>
-        <div class="container">
-            <button class="btn btnSlide btn-md"><span id="r2" class="caret"></span></button>
-        </div>
-    </div>
-    <h2 style="text-align:center">Contact Me</h2>
-    <hr class="small" style="border:1px solid #333">
-    <div class="container">
-        <div class="col-md-12" id="contact">
-            <h5>You can Contact Me at:</h5>
-            <p>9133313003
-                <br>9424528893</p>
-            <h5>Or Connect with us on</h5>
-            <div class="social container">
-                <button type="button" class="btn sb1" id="socialButtons" style="background:rgba(255,0,0,0.7)">
-                    <a href="#" id="socialLink" target="_blank"><img class="img-circle" src="images/g+.jpg" height="45px" width="45px"></a>
-                </button>
-                <button type="button" class="btn sb2" id="socialButtons" style="margin-left:15px;margin-right:15px;background:#3765a3">
-                    <a href="#" id="socialLink"><img class="img-circle" src="images/fb.jpg" width="36px" height="36px"></a>
-                </button>
-                <button type="button" class="btn sb3" id="socialButtons" style="background:#00aced">
-                    <a id="socialLink" href="#"><img class="img-circle" src="images/twitter.png" width="45px" height="45px"></a>
-                </button>
-                <p>GITHUB: <a href="https://github.com/praneetmehta" style="color:blue">praneetmehta</a></p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Online K-shop</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/cabin.png" class="img-responsive img-centered" alt="">
+                            <p>This is a Node.js based file transfer system at BPHC under smartcampus initiative that allows the user to send files to get photopied to the photocopy shop. It features user and admin portal and the functionality to get live status updates. (Individual Project) </p>
+                            <ul class="list-inline item-details">
+                                <li>Github:
+                                    <strong><a href="https://github.com/praneetmehta/online-Kshop" target="_blank">Here</a>
+                                    </strong>
+                                </li>
+
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <script type="text/javascript" src="js/test.js"></script>
-    <script type="text/javascript" src="js/proPic.js"></script>
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Mess Grace System</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/cake.png" class="img-responsive img-centered" alt="">
+                            <p>Another NodeJS based system for BPHC under smartcampus and student Mess Council that allows users to apply for mess graces. It features a simple calander to choose for grace days and apply for the same. Admin page allows admin to download grace entries for any particular day in form of a server generated text file.</p>
+                            <ul class="list-inline item-details">
+                                <li>Github:
+                                    <strong><a href="https://github.com/aero31aero/mess-grace">Here</a>
+                                    </strong>
+                                </li>
+
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Micro Blog</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/circus.png" class="img-responsive img-centered" alt="">
+                            <p>A simple micro bloggin platform(not "facebook" :P). Features a chat area, a posting window("and not wall"), and a profile page. allowing users to fill and update their information. It is build upon NodeJS and socket.io for real time chat and updates</p>
+                            <ul class="list-inline item-details">
+                                <li>Github:
+                                    <strong><a href="https://github.com/praneetmehta/microB-log" target="_blank">Here</a>
+                                    </strong>
+                                </li>
+
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Cab Sharing Portal</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/game.png" class="img-responsive img-centered" alt="">
+                            <p>A cab pooling service build upon nodeJS. Allows user to post cab sharing requests and also allows other users to view and filter cabs according to their time. A lot of features need to be added such as instant sharing(apply for sharing on the website) and show all users currently sharing the cab. Chatbox to be implemented as well</p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="https://github.com/praneetmehta/cab-sharing-portal" target="_blank">Here</a>
+                                    </strong>
+                                </li>
+
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>News Seggregator (ML + NodeJS)</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/safe.png" class="img-responsive img-centered" alt="">
+                            <p>This is an interesting one. Features news scraping, news category seggregation(ML) and a news feed display(NodeJS). Users can browse through categorized news article and move through various news pages. It also involves automatic python script invoking from the server for automatic news fetching, sorting and display, all at one click from the server</p>
+                            <ul class="list-inline item-details">
+                                <li>Github:
+                                    <strong><a href="https://github.com/praneetmehta/news_segregator" target="_blank">Start Bootstrap</a>
+                                    </strong>
+                                </li>
+
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Movie Review Sentiment Analysis</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/submarine.png" class="img-responsive img-centered" alt="">
+                            <p>I started this as a kaggle competition but later modified it for better and precise results on varied datasets. Basically this project aims to rate movies(1-5 star) based on its reveiws using a sophisticated machine learning model </p>
+                            <ul class="list-inline item-details">
+                                <li>Github:
+                                    <strong><a href="https://github.com/praneetmehta/movie_review_sentiment_analysis" target="_blank">Here</a>
+                                    </strong>
+                                </li>
+
+                            </ul>
+                            <button id="btnSubmit" type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/freelancer.min.js"></script>
+    
+<script> window._izq = window._izq || []; window._izq.push(["init"]); </script>
+<script src="https://cdn.izooto.com/scripts/bf27f296044ec2cc81e990005a0a8e49d8dd001f.js"></script>
+
 </body>
 
 </html>
